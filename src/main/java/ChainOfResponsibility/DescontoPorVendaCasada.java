@@ -4,12 +4,24 @@ public class DescontoPorVendaCasada implements Desconto {
 
     private Desconto oDescontoProximo;
 
+    public DescontoPorVendaCasada() {
+        this.oDescontoProximo = null;
+    }
+
+    public DescontoPorVendaCasada(Desconto oDescontoProximo) {
+        this.oDescontoProximo = oDescontoProximo;
+    }
+
     @Override
     public double desconto(OrcamentoVO i_oOrcamento) {
         if (aconteceuVendaCasadaEm(i_oOrcamento)) {
             return i_oOrcamento.getValor() * 0.05;
-        } else {
+            
+        } else if (oDescontoProximo != null) {
             return oDescontoProximo.desconto(i_oOrcamento);
+            
+        } else {
+            throw new RuntimeException("Formato de Desconto não aceito!");
         }
     }
 
