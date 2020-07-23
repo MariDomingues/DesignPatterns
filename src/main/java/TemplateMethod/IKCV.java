@@ -1,5 +1,8 @@
 package TemplateMethod;
 
+import Basico.Item;
+import Basico.OrcamentoVO;
+
 public class IKCV extends TemplateImpostoCondicional {
 
     @Override

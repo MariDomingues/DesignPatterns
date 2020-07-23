@@ -1,5 +1,8 @@
 package Strategy;
 
+import Basico.Imposto;
+import Basico.OrcamentoVO;
+
 public class ISS implements Imposto {
 
     @Override

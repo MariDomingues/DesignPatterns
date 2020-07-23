@@ -1,5 +1,8 @@
 package TemplateMethod;
 
+import Basico.Imposto;
+import Basico.OrcamentoVO;
+
 public abstract class TemplateImpostoCondicional implements Imposto {
 
     @Override

@@ -1,5 +1,7 @@
 package ChainOfResponsibility;
 
+import Basico.OrcamentoVO;
+
 public class SemDesconto implements Desconto {
 
     @Override

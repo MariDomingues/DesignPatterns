@@ -1,5 +1,7 @@
 package TemplateMethod;
 
+import Basico.OrcamentoVO;
+
 public class Main {
 
     public static void main(String[] args) {

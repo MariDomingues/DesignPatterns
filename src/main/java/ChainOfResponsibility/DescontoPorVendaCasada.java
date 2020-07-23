@@ -1,5 +1,8 @@
 package ChainOfResponsibility;
 
+import Basico.Item;
+import Basico.OrcamentoVO;
+
 public class DescontoPorVendaCasada implements Desconto {
 
     private Desconto oDescontoProximo;

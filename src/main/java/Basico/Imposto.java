@@ -1,4 +1,6 @@
-package Strategy;
+package Basico;
+
+
 
 public interface Imposto {
     

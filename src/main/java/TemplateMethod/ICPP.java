@@ -1,5 +1,7 @@
 package TemplateMethod;
 
+import Basico.OrcamentoVO;
+
 public class ICPP extends TemplateImpostoCondicional {
 
     @Override

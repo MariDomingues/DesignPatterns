@@ -1,5 +1,8 @@
 package Strategy;
 
+import Basico.Imposto;
+import Basico.OrcamentoVO;
+
 public class CalculadoraImposto {
     
     public void calcular(OrcamentoVO i_oOrcamento, Imposto i_oImposto) {
