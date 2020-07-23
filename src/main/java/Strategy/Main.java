@@ -1,5 +1,8 @@
 package Strategy;
 
+import Basico.ISS;
+import Basico.ICMS;
+import Basico.ICCC;
 import Basico.OrcamentoVO;
 
 public class Main {

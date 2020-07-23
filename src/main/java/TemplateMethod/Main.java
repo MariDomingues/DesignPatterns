@@ -1,5 +1,8 @@
 package TemplateMethod;
 
+import Basico.ICCC;
+import Basico.ICMS;
+import Basico.ISS;
 import Basico.OrcamentoVO;
 
 public class Main {

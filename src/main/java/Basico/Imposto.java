@@ -1,8 +1,15 @@
 package Basico;
 
-
-
-public interface Imposto {
+public abstract class Imposto {
     
-    public double calcular(OrcamentoVO i_oOrcamento);
+    protected Imposto oOutroImposto;
+
+    public Imposto(Imposto oOutroImposto) {
+        this.oOutroImposto = oOutroImposto;
+    }
+
+    public Imposto() {
+    }
+    
+    public abstract double calcular(OrcamentoVO i_oOrcamento);
 }

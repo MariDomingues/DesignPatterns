@@ -1,9 +1,16 @@
-package TemplateMethod;
+package Basico;
 
 import Basico.Imposto;
 import Basico.OrcamentoVO;
 
-public class ICMS implements Imposto {
+public class ICMS extends Imposto {
+
+    public ICMS(Imposto oOutroImposto) {
+        super(oOutroImposto);
+    }
+
+    public ICMS() {
+    }
 
     @Override
     public double calcular(OrcamentoVO i_oOrcamento) {
