@@ -1,8 +1,5 @@
 package Basico;
 
-import Basico.Imposto;
-import Basico.OrcamentoVO;
-
 public class ISS extends Imposto {
 
     public ISS(Imposto oOutroImposto) {
@@ -10,11 +7,11 @@ public class ISS extends Imposto {
     }
 
     public ISS() {
+        super();
     }
 
     @Override
     public double calcular(OrcamentoVO i_oOrcamento) {
-        return i_oOrcamento.getValor() * 0.06;
+        return i_oOrcamento.getValor() * 0.06 + proximoImposto(i_oOrcamento);
     }
-    
 }

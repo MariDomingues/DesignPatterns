@@ -1,8 +1,5 @@
 package Basico;
 
-import Basico.Imposto;
-import Basico.OrcamentoVO;
-
 public class ICMS extends Imposto {
 
     public ICMS(Imposto oOutroImposto) {
@@ -10,10 +7,11 @@ public class ICMS extends Imposto {
     }
 
     public ICMS() {
+        super();
     }
 
     @Override
     public double calcular(OrcamentoVO i_oOrcamento) {
-        return i_oOrcamento.getValor() * 0.05 + 50;
+        return i_oOrcamento.getValor() * 0.05 + 50 + proximoImposto(i_oOrcamento);
     }
 }

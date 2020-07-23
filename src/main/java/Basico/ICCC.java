@@ -1,8 +1,5 @@
 package Basico;
 
-import Basico.Imposto;
-import Basico.OrcamentoVO;
-
 public class ICCC extends Imposto {
 
     public ICCC(Imposto oOutroImposto) {

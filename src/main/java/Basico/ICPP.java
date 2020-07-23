@@ -1,12 +1,19 @@
-package TemplateMethod;
+package Basico;
 
-import Basico.OrcamentoVO;
+import TemplateMethod.TemplateImpostoCondicional;
 
 public class ICPP extends TemplateImpostoCondicional {
 
+    public ICPP(Imposto impst) {
+        super(impst);
+    }
+
+    public ICPP() {
+    }
+
     @Override
     protected boolean temMaximaTaxacao(OrcamentoVO i_oOrcamento) {
-        return i_oOrcamento.getValor() >= 500;
+        return i_oOrcamento.getValor() >= 500 + proximoImposto(i_oOrcamento);
     }
 
     @Override

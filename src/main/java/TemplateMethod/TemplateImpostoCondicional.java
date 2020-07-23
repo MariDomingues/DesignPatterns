@@ -5,8 +5,8 @@ import Basico.OrcamentoVO;
 
 public abstract class TemplateImpostoCondicional extends Imposto {
 
-    public TemplateImpostoCondicional(Imposto oOutroImposto) {
-        super(oOutroImposto);
+    public TemplateImpostoCondicional(Imposto impst) {
+        super(impst);
     }
 
     public TemplateImpostoCondicional() {
@@ -15,9 +15,9 @@ public abstract class TemplateImpostoCondicional extends Imposto {
     @Override
     public final double calcular(OrcamentoVO i_oOrcamento) {
         if (temMaximaTaxacao(i_oOrcamento)) {
-            return maximaTaxacao(i_oOrcamento);
+            return maximaTaxacao(i_oOrcamento) + proximoImposto(i_oOrcamento);
         } else {
-            return minimaTaxacao(i_oOrcamento);
+            return minimaTaxacao(i_oOrcamento) + proximoImposto(i_oOrcamento);
         }
     }
 

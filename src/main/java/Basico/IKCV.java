@@ -1,9 +1,15 @@
-package TemplateMethod;
+package Basico;
 
-import Basico.Item;
-import Basico.OrcamentoVO;
+import TemplateMethod.TemplateImpostoCondicional;
 
 public class IKCV extends TemplateImpostoCondicional {
+
+    public IKCV(Imposto impst) {
+        super(impst);
+    }
+
+    public IKCV() {
+    }
 
     @Override
     protected boolean temMaximaTaxacao(OrcamentoVO i_oOrcamento) {
