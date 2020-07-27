@@ -1,6 +1,6 @@
 package Builder;
 
-class ItemNota {
+public class ItemNota {
     
     private String nome;
     private double valor;
